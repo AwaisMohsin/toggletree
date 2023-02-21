@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christmas Tree</title>
 
-    
-  </head>
-  <body>
-    <input
-    onchange="toggleImage('lightsImage')"
-    checked
-    type="checkbox"
-    name="lights"
-  />
-  <label>Lights</label>
-  <input
-    onchange="toggleImage('starsImage')"
-    checked
-    type="checkbox"
-    name="stars"
-  />
-  <label>Stars</label>
-  <input
-    onchange="toggleImage('topperImage')"
-    checked
-    type="checkbox"
-    name="topper"
-  />
-  <label>Topper</label>
+    <style>
+        img {
+            position: absolute;
+        }
+
+        .hide {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <input onchange="toggleImage('lightsImage')" checked type="checkbox" name="lights" />
+    <label>Lights</label>
+    <input onchange="toggleImage('starsImage')" checked type="checkbox" name="stars" />
+    <label>Stars</label>
+    <input onchange="toggleImage('topperImage')" checked type="checkbox" name="topper" />
+    <label>Topper</label>
     <br />
     <img src="tree.png" />
     <img id="starsImage" src="stars.png" />
     <img id="topperImage" src="topper.png" />
     <img id="lightsImage" src="lights.png" />
 
-    
-  </body>
+
+</body>
+
 </html>
